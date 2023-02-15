@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+    <style>
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      body {
+        background-color: black;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      button {
+        width: 7.5rem;
+        height: 2.5rem;
+        color: white
+      }
+      #rmv-imgs{
+        background-color: orangered;
+      }
+      #search-btn {
+        background-color: black
+      }
+      input {
+        height: 2rem;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Giphy Party!</title>
-</head>
-
-<body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="app.js"></script>
-</body>
-
+  <body">
+    <h1>GIPHY PARTY</h1>
+    <div>
+      <form action="" method="get" id="giphy-form">
+        <input type="text" id="search-text" name="search" placeholder="enter text"/>
+        <button type="submit" form="giphy-form" value="submit" id="search-btn">
+          Search Giphy!
+        </button>
+        
+      </form>
+      <button id="rmv-imgs">Remove Images</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
